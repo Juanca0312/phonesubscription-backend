@@ -18,7 +18,6 @@ public class PhoneSubscription {
 
     @NotNull
     @NotBlank
-    @JsonFormat(pattern="yyyy-MM-dd' 'HH:mm:ss")
     private Date month;
 
     @NotBlank
