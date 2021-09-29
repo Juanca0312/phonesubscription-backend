@@ -1,5 +1,6 @@
 package com.phonesubscription.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class PhoneSubscription {
 
     @NotNull
     @NotBlank
+    @JsonFormat(pattern="yyyy-MM-dd' 'HH:mm:ss")
     private Date month;
 
     @NotBlank
